@@ -17,6 +17,8 @@ def start():
 
 		user_choice = int(input("enter command:\n"))
 		call_function(user_choice)
+		if user_choice < 1 or user_choice > 6:
+			print("invalid command try again!")
 		if user_choice ==6:
 			break
 
@@ -33,7 +35,8 @@ def call_function(user_choice):
 		book_name = input("enter book name to return:\n")
 		return_book(book_name)
 	elif user_choice == 5:
-		students_that_borrow()		
+		students_that_borrow()
+				
 	
 	
 
